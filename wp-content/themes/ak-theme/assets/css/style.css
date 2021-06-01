@@ -1,0 +1,352 @@
+/*
+Theme Name: AkTheme
+Text Domain: AkademiaKaliska
+Version: 1.0
+Author: Michał Szczepański
+
+*/
+html, body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto';
+}
+.headerLogo{
+    background-color: white;
+    min-height: 120px;
+    border-bottom: 2px solid #045ac4;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.headerLogo .container > a > img{
+    height: 120px;
+}
+.container, .postListContainer{
+    display: block;
+    max-width: 1120px !important;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.container ul{
+    padding: 0;
+}
+.articleContainer{
+    max-width: 680px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.articleContainer img{
+    max-width: 700px;
+    margin: 15px auto;
+    display: block;
+    height: auto;
+}
+.headerLogo > a > img{
+    float: left;
+}
+.headerLogo nav{
+    float: right;
+    margin-top: 30px;
+}
+.headerLogo > .container::after, .headerLogo ul::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.headerLogo nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    width: auto;
+}
+.headerLogo nav ul li{
+    display: block;
+    height: 50px;
+    padding: 0px 5px;
+    line-height: 50px;
+    float: left;
+    min-width: 90px;
+}
+.headerLogo nav ul li a{
+    display: block;
+    color: black;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.headerLogo nav ul li a:hover{
+    border-bottom: 4px solid #045ac4;
+}
+.facebook{
+    min-width: 40px !important;
+}
+.facebook a:hover img{
+    opacity: 0.6;
+}
+.facebook a:hover{
+    background-color: white;
+}
+.bottomInfo, footer{
+    background-color: #014aa4;
+    color: white;
+    font-size: 11pt;
+    font-family: 'Calibri Light';
+}
+.bottomInfo{
+    min-height: 130px;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+.bottomInfo .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottomInfo h2{
+    margin: 0;
+    font-weight: 500;
+}
+.bottomInfo .contact h2{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.bottomInfo input[type=submit]{
+    float: right;
+    min-width: 120px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(24, 86, 163);
+    margin-top: 10px;
+}
+.bottomInfo input[type=submit]:hover{
+    cursor: pointer;
+    background-color: rgb(24, 103, 201);
+    color: white;
+}
+.bottomInfo .social{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.bottomInfo .social .wpforms-container{
+    margin-bottom: 0px;
+}
+.bottomInfo .column{
+    width: calc( 33% - 20px );
+    float: left;
+    padding: 10px;
+}
+.bottomInfo  .column p{
+    word-wrap: break-word;
+}
+.bottomInfo .container::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.bottomInfo li{
+    list-style-type: none;
+}
+.bottomInfo .menuWrap{
+    display: inline-block;
+    margin: auto;
+}
+footer .copyright{
+    height: 40px;
+    padding: 0 10px;
+    border-top: 1px solid white;
+    line-height: 40px;
+}
+.bottomInfo ul{
+    padding: 0;
+}
+.bottomInfo .navbar{
+    display: flex;
+}
+.bottomInfo .navbar li{
+    width: 100px;
+}
+.bottomInfo a{
+    color: white;
+}
+.bottomInfo .navbar a{
+    text-decoration: none;
+    line-height: 22px;
+}
+.bottomInfo a:hover{
+    color: rgb(80, 159, 255);
+}
+.bottomInfo .social .socialLink{
+    margin: 0 3px;
+    text-decoration: none !important;
+}
+.meta .tag{
+    background-color: rgb(221, 221, 221);
+    padding: 3px 5px;
+    border-radius: 10px;
+    color: grey;
+    margin: 0 3px;
+}
+.meta .tag a{
+    color: grey;
+    text-decoration: none;
+}
+.meta .tag a:hover{
+    color: rgb(228, 227, 227);
+}
+.articleContainer .meta{
+    padding: 10px 0; 
+    border-bottom: 2px solid rgb(236, 236, 236);
+    margin-bottom: 25px;
+}
+.articleContainer h2{
+    margin: 15px 0 0 0;
+
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    font-size: 6vw;
+    cursor: pointer;
+    display: none;
+}
+.hamburger:focus{
+    outline: none;
+}
+.postListContainer .mediaImage{
+    float: left;
+}
+.postListContainer .mediaImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.postListContainer .media{
+    display: flex;
+    align-items: center;
+}
+.postListContainer .post::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.postListContainer .mediaBody{
+    padding: 0px 20px;
+}
+.postListContainer .post{
+    padding: 15px 0;
+    border-bottom: 3px solid  rgba(110, 175, 255, 0.055);
+}
+.postListContainer a{
+    color: #045ac4; 
+    text-decoration: none;
+}
+@media (max-width: 1100px){
+    .headerLogo > a > img{
+        float: none
+    }
+    .headerLogo .container{
+        padding: 0;
+    }
+    .headerLogo nav{
+        float: none;
+        margin: 0px auto 10px auto;
+    }
+    .headerLogo nav ul{
+        display: inline-block;
+    }
+    .headerLogo nav{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .headerLogo .container{
+        text-align: center;
+    }
+}
+@media (max-width: 768px){
+    .headerLogo .container{
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .headerLogo{
+        min-height: auto;
+    }
+    .headerLogo nav{
+        display: none;
+        float: none;
+        margin: 0;
+    }
+    .headerLogo  nav, .headerLogo nav ul{
+        width: 100%;
+    }
+    .headerLogo nav ul li{
+        padding: 0;
+        float: none;
+        background-color: white;
+        width: 100%;
+        border-top: 2px solid #045ac4;
+    }
+    .headerLogo nav ul li a:hover{
+        background-color: #045ac45d;
+        border-bottom: 0;
+    }
+
+    .headerLogo nav.show{
+        display: flex;
+    }
+    .hamburger{
+        float: right;
+        display: flex;
+    }
+    .headerLogo .container > a > img, .headerLogo .container > a{
+        max-width: 80%;
+        height: auto;
+    }
+    .postListContainer .mediaImage{
+        float: none;
+    }
+}
+@media (max-width: 700px){
+    .articleContainer img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 600px){
+
+    .bottomInfo .column{
+        width: calc( 100% - 10px );
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+    } 
+    .bottomInfo .container{
+        display: block;
+    }
+    .postListContainer .mediaImage img{
+        width: 100%;
+        height: auto;
+    }
+    .postListContainer .mediaImage{
+        display: block;
+    }
+    .postListContainer .media{
+        display: block;
+    }
+
+}
+@media (max-width: 500px){
+    
+}

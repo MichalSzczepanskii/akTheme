@@ -1,0 +1,257 @@
+/*
+Theme Name: AkTheme
+Text Domain: AkademiaKaliska
+Version: 1.0
+Author: Michał Szczepański
+
+*/
+html, body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Mulish';
+}
+.pageHeader{
+    background-color: white;
+}
+.pageHeader img{
+    max-height: 120px;
+}
+.post .colCenter{
+    align-items: center;
+    display: flex;
+}
+.post .intro{
+    text-align: justify;
+}
+.article-img{
+    max-width: 100%;
+    height: auto;
+}
+.postListContainer{
+    display: block;
+    max-width: 1120px !important;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.articleContainer{
+    max-width: 680px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.articleContainer img{
+    max-width: 700px;
+    margin: 15px auto;
+    display: block;
+    height: auto;
+}
+.facebook img{
+    width: 30px !important;
+    height: auto;
+}
+.facebook a:hover{
+    background-color: white;
+}
+.bottomInfo, footer{
+    background-color: #014aa4;
+    color: white;
+    font-size: 11pt;
+    font-family: 'Calibri Light';
+}
+footer .copyright{
+    border-top: 1px solid white;
+}
+.bottomInfo  ul{
+    list-style: none;
+}
+.bottomInfo .social{
+    text-align: center;
+}
+.bottomInfo .menuWrap{
+    margin: auto;
+}
+.bottomInfo .menuWrap > ul{
+    margin: 0;
+    padding: 0;
+}
+.bottomInfo a{
+    color: white;
+    text-decoration: none;
+}
+.bottomInfo a:hover{
+    color: #7ab6ff;
+}
+.bottomInfo .contactLink{
+    text-decoration: underline;
+}
+.meta .tag{
+    background-color: rgb(221, 221, 221);
+    padding: 3px 5px;
+    border-radius: 10px;
+    color: grey;
+    margin: 0 3px;
+}
+.meta .tag a{
+    color: grey;
+    text-decoration: none;
+}
+.meta .tag a:hover{
+    color: rgb(255, 255, 255);
+}
+.img-fit{
+    max-width: 100%;
+    height: auto;
+}
+.eventCol{
+    min-width: 320px;
+}
+.eventCell{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.eventCell .date{
+    color: grey;
+    font-size: 11pt;
+    text-align: left;
+    padding: 0px 10px 10px 10px;
+}
+.eventCell h3{
+    text-align: center;
+    font-family: 'Calibri';
+    margin: 10px 0;
+}
+.eventCell .excerpt{
+    color: black;
+    text-align: justify;
+    margin: 0;
+    padding: 0 10px;
+}
+.eventCell img{
+    width: 100%;
+    height: auto;
+}
+.localization{
+    background-color: #f0f1f2;
+    min-width: 270px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.visuallyhidden { 
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+.fpTitle, h1{
+    margin: 20px 0;
+    display: inline-block;
+    padding: 6px 10px;
+    border-bottom: 3px solid #014aa4;
+    min-width: 300px;
+}
+h1{
+    min-width: 350px;
+}
+.navbar .nav-link{
+    color: white !important;
+}
+.navbar .nav-link:hover{
+    color: rgb(152, 202, 248) !important;
+}
+.searchContainer{
+    background-color: #014aa4;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+}
+@media (max-width: 1200px){
+    .navbar .container-lg > a > img, .navbar .container > a{
+        max-width: 80%;
+        height: auto;
+    }
+}
+@media (max-width: 768px){
+    .headerLogo .container{
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .headerLogo{
+        min-height: auto;
+    }
+    .headerLogo nav{
+        display: none;
+        float: none;
+        margin: 0;
+    }
+    .headerLogo  nav, .headerLogo nav ul{
+        width: 100%;
+    }
+    .headerLogo nav ul li{
+        padding: 0;
+        float: none;
+        background-color: white;
+        width: 100%;
+        border-top: 2px solid #045ac4;
+    }
+    .headerLogo nav ul li a:hover{
+        background-color: #045ac45d;
+        border-bottom: 0;
+    }
+
+    .headerLogo nav.show{
+        display: flex;
+    }
+    .hamburger{
+        float: right;
+        display: flex;
+    }
+    .navbar .container-lg > a > img, .navbar .container-lg > a{
+        max-width: 80%;
+        height: auto;
+    }
+    .postListContainer .mediaImage{
+        float: none;
+    }
+}
+@media (max-width: 700px){
+    
+}
+@media (max-width: 600px){
+
+
+
+    .bottomInfo .column{
+        width: calc( 100% - 10px );
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+    } 
+    .bottomInfo .container{
+        display: block;
+    }
+    .postListContainer .mediaImage img{
+        width: 100%;
+        height: auto;
+    }
+    .postListContainer .mediaImage{
+        display: block;
+    }
+    .postListContainer .media{
+        display: block;
+    }
+
+}
+@media (max-width: 500px){
+    
+}
